@@ -24,7 +24,7 @@ services:
       placement:
         constraints: [node.role == manager]
   vote:
-    image: emilpaluch/dockerlabvoteapp_vote:before
+    image: emilpaluch/dockerlabvoteapp_vote:1
     ports:
       - 5000:80
     networks:
@@ -38,7 +38,7 @@ services:
       restart_policy:
         condition: on-failure
   result:
-    image: emilpaluch/dockerlabvoteapp_result:before
+    image: emilpaluch/dockerlabvoteapp_result:1
     ports:
       - 5001:80
     networks:
