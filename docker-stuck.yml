@@ -24,7 +24,7 @@ services:
       placement:
         constraints: [node.role == manager]
   vote:
-    image: emilpaluch/dockerlabvoteapp_vote:1
+    image: emilpaluch/dockerlabvoteapp:1
     ports:
       - 5000:80
     networks:
